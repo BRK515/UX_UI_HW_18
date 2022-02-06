@@ -4,20 +4,19 @@ body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;  
     
 }
-
-.container{
-    width: 90%;
+/*Navigation Bar*/
+.nav-container{
+    padding: 0 3%;
     margin: 0 auto;
     
 }
 
 header {
     background: #002138;
-    height: 80px;
-    padding: 15px; 
+    padding: 2%; 
 }
 
-.container p{
+.nav-container p{
     color: #EDEDED;
     display: inline-block;
     font-size: 24px;
@@ -56,70 +55,206 @@ nav a{
 a:hover{
     text-decoration: underline 3px;
 }
-
+/*Dividing Line*/
 .light-blue{
     height: 25px;
     background: #93B8D3;
 }
-
-.main{
+/*Landing page main content*/
+.main-title{
     display: flex;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    padding-top: 50px;
+    padding-top: 1%;
 }
-.logo1 {
+/*.logo1 {
     float: left;
 }
-
+*/
 .title {
-    float: right;
+    margin: auto;
+    text-align: center;
+  
 }
 
 .title h1 {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 160px;
     letter-spacing: 32px;
-    margin-top: 0;
-    margin-left: 100px;
     color: #306E9A
 
 }
 .title h2{
     font-size: 96px;
     font-weight: 400;
-    margin-top: -150px;
+    margin-top: -20%;
     letter-spacing:30px;
     color: #306E9A;
 }
 
 .title p{
     font-size: 18px;
-    margin-top: -85px;
-    margin-left: 70px;
+    margin-top: -10%;
 }
 
-.work{
-    text-align: center;
-    margin-top: 50px;
-    margin-left: -330px;
-    font-size: 48px;
-    color: #002138;   
+.my-work h3{
+    font-family:  'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #306E9A;
 }
+
 
 .my-work{
-    margin-bottom: 50px;
-    margin-left: 400px; 
+   margin: 2%;
+   text-align: center;
+
 }
 
+.my-work img{
+    padding: 2%;
+}
+/*my-work.html Content*/
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 5% 20%;
+    padding: 15px;
+    /*background-color: green;*/
+}
 
+.work-container  div {
+
+    padding: 10% 0;
+    text-align: left;
+    /*background-color: yellow*/
+}
+
+.work-container h1 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 10px;
+    color:#306E9A;  
+}
+
+.work-container h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:#002138;
+}
+
+.work-container p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 10px;
+    color:#002138;
+}
+
+.work-container img{
+    size: 400px;
+}
+.project-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.project{
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    
+}
+
+/*about.html Content*/
+
+.about-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 50px; 
+    grid-template-areas: 
+      "bk-pic about-info about-info"
+      "bk-pic my-skills my-skills"; 
+    margin: 5% 15%;
+}
+
+  .bk-pic {
+      grid-area: bk-pic;
+}
+
+  .about-info {
+      grid-area: about-info;
+      
+}
+
+.about-info h1 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #306E9A;
+}
+
+.about-info h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #002138;
+}
+  .my-skills {
+    display: grid; 
+    grid-template-columns: 1.5fr 0.5fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "skills programs"; 
+    grid-area: my-skills; 
+}
+
+  .skills {
+      grid-area: skills;  
+      color: #002138;
+}
+
+  .programs {
+      grid-area: programs;
+      color: #002138;
+}
+  .skill-list{
+      columns: 2;
+      color: #002138;
+  }
+
+  .program-list{
+    color: #002138;
+  }
+  .bk-pic button{
+    background-color: #306E9A;
+    color: #EDEDED;
+    padding: 20px 40px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 10%;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px rgba(0, 33, 56, .5)
+    
+
+  }
+/*Footer*/
 .footer{
+    width: 100%;
     background: #002138;
     color: #EDEDED;
-    height: 50px;
     padding: 15px 15px;
+    height: 50px;
 }
 
 .footer a{
@@ -129,4 +264,20 @@ a:hover{
 
 .copyright{
     float: right;
+    padding-right: 5%;
+}
+
+@media only screen and (max-width: 600){
+    .about-container {
+        display: grid;
+        grid-template-areas: 
+          "bk-pic"
+          "about-info"
+          "my-skills"
+        
+    }
+
+    .work-container{
+        display: grid;
+        
 }
