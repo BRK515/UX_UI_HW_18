@@ -1,10 +1,11 @@
 body{
     margin: 0;
     background: #EDEDED;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;  
-    
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;   
 }
-/*Navigation Bar*/
+
+/*-------------------------------------Navigation-----------------------------*/
+
 .nav-container{
     padding: 0 3%;
     margin: 0 auto;
@@ -55,12 +56,16 @@ nav a{
 a:hover{
     text-decoration: underline 3px;
 }
-/*Dividing Line*/
+
+/*-----------------------------------Dividing Line----------------------------*/
+
 .light-blue{
     height: 25px;
     background: #93B8D3;
 }
-/*Landing page main content*/
+
+/*-------------------------------index.html Content---------------------------*/
+
 .main-title{
     display: flex;
     justify-content: space-evenly;
@@ -115,7 +120,9 @@ a:hover{
 .my-work img{
     padding: 2%;
 }
-/*my-work.html Content*/
+
+/*------------------------------my-work.html content--------------------------*/
+
 .work-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,19 +169,16 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    
+    align-content: center;  
 }
 
 .project{
     display: flex;
-    
     justify-content: center;
-    align-content: center;
-    
+    align-content: center;  
 }
 
-/*about.html Content*/
+/*-------------------------------about.html content---------------------------*/
 
 .about-container {
     display: grid; 
@@ -183,7 +187,7 @@ a:hover{
     gap: 10px 50px; 
     grid-template-areas: 
       "bk-pic about-info about-info"
-      "bk-pic my-skills my-skills"; 
+      "bk-pic my-skills my-skills";
     margin: 5% 15%;
 }
 
@@ -248,7 +252,9 @@ a:hover{
     
 
   }
-/*Footer*/
+
+/*------------------------------------Footer----------------------------------*/
+
 .footer{
     width: 100%;
     background: #002138;
@@ -267,17 +273,21 @@ a:hover{
     padding-right: 5%;
 }
 
-@media only screen and (max-width: 600){
-    .about-container {
-        display: grid;
-        grid-template-areas: 
-          "bk-pic"
-          "about-info"
-          "my-skills"
-        
-    }
+/*----------------------------------Media Queries-----------------------------*/
 
+@media only screen and (max-width: 600){
+    .about-container{
+        grid-template-areas: 
+        "bk-pic"
+        "about-info"
+        "my-skills"
+    }
+}
+
+@media only screen and (max-width: 600) {
     .work-container{
-        display: grid;
-        
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
 }
